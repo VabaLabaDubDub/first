@@ -3,3 +3,12 @@ body {
   font-size: 20px;
   margin: 20px;
 }
+body div {
+  color: red;
+}
+body div h1 {
+  font-size: 30px;
+}
+body div h1 .header__text {
+  font-size: 15px;
+}

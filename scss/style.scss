@@ -2,4 +2,15 @@
 body{
 	font-size: 20px;
 	margin: 20px;
+	div{
+
+		color: red;
+		h1{
+			font-size: 30px;
+			.header__text{
+				font-size: 15px;
+			}
+		}
+
+	}
 }
