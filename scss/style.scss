@@ -1,16 +1,85 @@
 @import url(../css/null.css);
-body{
-	font-size: 20px;
-	margin: 20px;
-	div{
 
-		color: red;
-		h1{
-			font-size: 30px;
-			.header__text{
-				font-size: 15px;
-			}
-		}
+
+.header {
+	background-color: rgb(176, 11, 218);
+	height: 400px;
+	
+}
+.header__title {
+	padding-top: 140px;
+	color: aliceblue;
+	&::after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 46%;
+		background-color: rgb(255, 255, 255);
+		height: 1px;
+		width: 100px;
+
+}
+}
+.title {
+	font-size: 36px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	text-align: center;
+	position: relative;
+	line-height: 60px;
+	
+		
+	}
+
+.main {
+}
+.main__services {
+	height: 500px;
+	background-color: rgb(24, 193, 164);
+	padding: 80px 0px 0px 0px;
+	
+	
+}
+.services {
+	color: aliceblue;
+}
+.services__title {
+	margin: 0px 0px 30px 0px;
+	
+	&::after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 46%;
+		background-color: rgb(255, 255, 255);
+		height: 1px;
+		width: 100px;
+		
+	
+	}
+}
+.services__text {
+}
+.text {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.services__card{
+
+}
+.card{
+	&__img{
+		width: 50px;
+		height: 50px;
+
+	}
+	&__title{
+
+	}
+	&__tetx{
 
 	}
 }
