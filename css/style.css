@@ -4,8 +4,12 @@ body {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 400px;
   background-color: rgb(129, 11, 129);
 }
@@ -14,6 +18,7 @@ body {
   margin: 150px 0px 0px 0px;
 }
 .header__title {
+  line-height: 50px;
   color: white;
   font-size: 36px;
   text-transform: uppercase;
@@ -26,7 +31,7 @@ body {
   content: "";
   width: 50px;
   height: 1px;
-  background-color: black;
+  background-color: rgba(19, 18, 18, 0.2);
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -54,6 +59,7 @@ body {
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
+  line-height: 50px;
   letter-spacing: 5px;
   position: relative;
   margin: 0px 0px 15px 0px;
@@ -78,8 +84,12 @@ body {
 }
 
 .services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .services__block {
@@ -95,5 +105,76 @@ body {
 
 .services__cardtitle {
   font-size: 20px;
+  text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+/*___________________________TEAM_________________________*/
+.team {
+  height: 600px;
+  background-color: rgb(210, 217, 223);
+}
+.team__container {
+  padding-top: 100px;
+}
+.team__title {
+  font-size: 36px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+  position: relative;
+}
+.team__title::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: rgba(19, 18, 18, 0.2);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -30px;
+}
+.team__blocktitle {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.team__text {
+  font-size: 14px;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
+}
+.team__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 100px;
+  text-align: center;
+}
+.team__presentation {
+  max-width: 250px;
+  margin-right: 50px;
+}
+.team__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(84, 85, 87);
+  margin-bottom: 20px;
+}
+
+.mstk {
+  text-align: center;
+  width: 150px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.link {
+  text-transform: lowercase;
 }

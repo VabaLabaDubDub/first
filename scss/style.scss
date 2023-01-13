@@ -16,6 +16,7 @@ body{
 	}
 
 	&__title {
+		line-height: 50px;
 		color: white;
 		font-size: 36px;
 		text-transform: uppercase;
@@ -27,7 +28,7 @@ body{
 		content: "";
 		width: 50px;
 		height: 1px;
-		background-color: black;
+		background-color: rgba(19, 18, 18, 0.2);
 		position: absolute;
 		left: 50%;
 		bottom: 0;
@@ -36,8 +37,8 @@ body{
 	}
 
 	&__text {
-		
 		color: white;
+		
 		
 			
 	}
@@ -70,6 +71,7 @@ body{
 		font-size: 36px;
 		text-transform: uppercase;
 		text-align: center;
+		line-height: 50px;
 	letter-spacing: 5px;	
 	position: relative;
 	
@@ -115,10 +117,92 @@ body{
 }
 .services__cardtitle {
 	font-size: 20px;
+	text-transform: uppercase;
 	margin-bottom: 15px;
 }
 .services__cardtext {
 }
 img{
+	
+}
+/*___________________________TEAM_________________________*/
+.team {
+	height: 600px;
+	background-color: rgb(210, 217, 223);
+&__container{
+	padding-top: 100px;
+}
+	&__title {
+		font-size: 36px;
+		line-height: 50px;
+		text-transform: uppercase;
+		text-align: center;
+		margin:0px 0px 15px 0px;
+		position: relative;
+		&::after{
+			content: "";
+			width: 50px;
+			height: 1px;
+			background-color: rgba(19, 18, 18, 0.2);
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			margin-left: -30px;
+			
+			
+		}
+	}
+	&__blocktitle{
+		font-size: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	
+	}
+
+	&__text {
+		font-size: 14px;
+		text-align: center;
+		margin:0px 0px 25px 0px;
+		
+	}
+
+	&__block {
+		display: flex;
+		justify-content: center;
+		padding: 0px 100px;
+		text-align: center;
+		
+	}
+
+	&__rowflex {
+		
+	}
+
+	&__presentation {
+		max-width: 250px;
+		margin-right: 50px;
+		
+	}
+
+	&__img {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: rgb(84, 85, 87);
+		margin-bottom: 20px;
+		
+	}
+}
+
+.mstk{
+	text-align: center;
+	width: 150px;
+	margin-top: 40px;
+	position: relative;
+	
+}
+.link{
+	text-transform: lowercase;
 	
 }
