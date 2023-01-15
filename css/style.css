@@ -1,15 +1,20 @@
 @import url(../css/null.css);
 body {
   width: 100%;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  position: relative;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 400px;
   background-color: rgb(129, 11, 129);
 }
@@ -20,11 +25,6 @@ body {
 .header__title {
   line-height: 50px;
   color: white;
-  font-size: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 5px;
-  position: relative;
   margin: 0px 0px 10px 0px;
 }
 .header__title::after {
@@ -42,7 +42,6 @@ body {
 }
 
 .text {
-  font-size: 14px;
   text-align: center;
 }
 
@@ -51,17 +50,13 @@ body {
   background-color: aqua;
   height: 500px;
   color: aliceblue;
-  padding: 130px 0px;
+  padding: 70px 0px;
 }
 
 .services__title {
   color: white;
   font-size: 36px;
-  text-transform: uppercase;
-  text-align: center;
   line-height: 50px;
-  letter-spacing: 5px;
-  position: relative;
   margin: 0px 0px 15px 0px;
 }
 .services__title::after {
@@ -78,29 +73,25 @@ body {
 .services__text {
   font-size: 14px;
   color: aliceblue;
-  display: inline-block;
   width: 500px;
-  margin: 0px 0px 30px 395px;
+  margin: 0 auto;
 }
 
 .services__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .services__block {
-  text-align: center;
-  max-width: 250px;
+  padding: 0px 35px;
 }
 
 .services__img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .services__cardtitle {
@@ -109,21 +100,23 @@ body {
   margin-bottom: 15px;
 }
 
+.services__cardtext {
+  text-align: center;
+  width: 150px;
+  margin-top: 40px;
+}
+
 /*___________________________TEAM_________________________*/
 .team {
   height: 600px;
   background-color: rgb(210, 217, 223);
 }
 .team__container {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 .team__title {
-  font-size: 36px;
   line-height: 50px;
-  text-transform: uppercase;
-  text-align: center;
   margin: 0px 0px 15px 0px;
-  position: relative;
 }
 .team__title::after {
   content: "";
@@ -142,39 +135,61 @@ body {
   margin-bottom: 5px;
 }
 .team__text {
-  font-size: 14px;
   text-align: center;
   margin: 0px 0px 25px 0px;
 }
 .team__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 0px 100px;
   text-align: center;
 }
-.team__presentation {
-  max-width: 250px;
-  margin-right: 50px;
+.team__rowflex {
+  max-width: 200px;
+  margin: 0 auto;
 }
 .team__img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: rgb(84, 85, 87);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .mstk {
   text-align: center;
   width: 150px;
-  margin-top: 40px;
-  position: relative;
+  margin: 0 auto;
 }
 
 .link {
   text-transform: lowercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/*____________________________________SKILLS___________________________________*/
+.skills {
+  height: 500px;
+  background-color: aliceblue;
+}
+.skills__container {
+  padding-top: 80px;
+}
+.skills__title {
+  line-height: 50px;
+}
+.skills__title::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: rgba(19, 18, 18, 0.2);
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -30px;
+}
+.skills__text {
+  margin: 15px 0px 30px 0px;
 }

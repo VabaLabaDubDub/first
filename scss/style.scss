@@ -1,6 +1,15 @@
 @import url(../css/null.css);
 body{
 	width: 100%;
+	font-size: 14px;
+}
+.title{
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 5px;	
+	position: relative;
+
 }
 .header {
 	display: flex;
@@ -18,12 +27,7 @@ body{
 	&__title {
 		line-height: 50px;
 		color: white;
-		font-size: 36px;
-		text-transform: uppercase;
-		text-align: center;
-	letter-spacing: 5px;	
-	position: relative;
-	margin: 0px 0px 10px 0px;
+		margin: 0px 0px 10px 0px;
 	&::after{
 		content: "";
 		width: 50px;
@@ -43,12 +47,8 @@ body{
 			
 	}
 }
-.title {
-	
-	
-}
+
 .text {
-	font-size: 14px;
 	text-align: center;
 }
 
@@ -60,7 +60,7 @@ body{
 	background-color: aqua;
 	height: 500px;
 	color: aliceblue;
-	padding: 130px 0px;
+	padding: 70px 0px;
 }
 .services__presentation {
 	
@@ -68,14 +68,9 @@ body{
 }
 .services__title {
 	color: white;
-		font-size: 36px;
-		text-transform: uppercase;
-		text-align: center;
+		font-size: 36px;		
 		line-height: 50px;
-	letter-spacing: 5px;	
-	position: relative;
-	
-	margin: 0px 0px 15px 0px;
+		margin: 0px 0px 15px 0px;
 	&::after{
 		content: "";
 		width: 50px;
@@ -91,28 +86,30 @@ body{
 .services__text {
 	font-size: 14px;
 	color: aliceblue;
-	display: inline-block;
 	width: 500px;
-	margin: 0px 0px 30px 395px ;
+	margin: 0 auto;
 	
 }
 .text {
 }
 .services__row {
 	display: flex;
-	justify-content: center;
+		justify-content: center;
+		text-align: center;
+		
 	
 }
 .flex {
 }
 .services__block {
-	text-align: center;
-	max-width: 250px;
+	padding: 0px 35px;
 }
 .services__img {
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
 	margin-bottom: 30px;
+	margin-top: 30px;
+	
 	
 }
 .services__cardtitle {
@@ -121,6 +118,9 @@ body{
 	margin-bottom: 15px;
 }
 .services__cardtext {
+	text-align: center;
+	width: 150px;
+	margin-top: 40px;
 }
 img{
 	
@@ -130,16 +130,12 @@ img{
 	height: 600px;
 	background-color: rgb(210, 217, 223);
 &__container{
-	padding-top: 100px;
+	padding-top: 90px;
 }
 	&__title {
-		font-size: 36px;
-		line-height: 50px;
-		text-transform: uppercase;
-		text-align: center;
-		margin:0px 0px 15px 0px;
-		position: relative;
-		&::after{
+			line-height: 50px;
+			margin:0px 0px 15px 0px;
+			&::after{
 			content: "";
 			width: 50px;
 			height: 1px;
@@ -157,11 +153,12 @@ img{
 		text-align: center;
 		text-transform: uppercase;
 		margin-bottom: 5px;
+		
 	
 	}
 
 	&__text {
-		font-size: 14px;
+		
 		text-align: center;
 		margin:0px 0px 25px 0px;
 		
@@ -176,21 +173,23 @@ img{
 	}
 
 	&__rowflex {
+		max-width: 200px;
+		margin: 0 auto;
 		
 	}
 
 	&__presentation {
-		max-width: 250px;
-		margin-right: 50px;
+		
 		
 	}
 
 	&__img {
-		width: 50px;
-		height: 50px;
+		width: 100px;
+		height: 100px;
 		border-radius: 50%;
+		
 		background-color: rgb(84, 85, 87);
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		
 	}
 }
@@ -198,11 +197,60 @@ img{
 .mstk{
 	text-align: center;
 	width: 150px;
-	margin-top: 40px;
-	position: relative;
+	margin:0 auto;
+	
+
+	;
+	
 	
 }
 .link{
 	text-transform: lowercase;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 30px;
 	
 }
+
+
+/*____________________________________SKILLS___________________________________*/
+.skills {
+	height: 500px;
+	background-color: aliceblue;
+
+	&_presentation {
+	}
+
+	&_card {
+	}
+
+	&__container {
+		padding-top: 80px;
+	}
+
+	&__title {
+		line-height: 50px;
+		&::after{
+			content: "";
+			width: 50px;
+			height: 1px;
+			background-color: rgba(19, 18, 18, 0.2);
+			position: absolute;
+			left: 50%;
+			bottom: 0px;
+			margin-left: -30px;
+			
+			
+			
+		}
+		
+	}
+
+	&__text {
+		margin: 15px 0px 30px 0px;
+	}
+
+	&__blockrow {
+	}
+}
+
